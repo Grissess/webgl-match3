@@ -1,0 +1,26 @@
+All source files in the root are my work, available under the GPLv3; the text
+is available in the GPL3 file in the root of the repository.
+
+Note that not all img/ files are present due to copyright encumbrance:
+
+- n.*, o.*, r.*, t*, h.*, u.*, g.*: My work, using the Impact Condensed font.
+  If that font is not encumbered, I make it available under CC0.
+
+- gem.*, cherries.*, coin*: My work. Available under CC0.
+
+- dragon* (my favorite tileset) was copyright Sandara (as identified on
+  Deviantart) for gamermats.com, and is not included at the request of the
+  copyright holder ("Please do not use.").
+
+- casper.jpg, collins.jpg, hunter.jpg, lynch.jpg, maciel17.jpg, matthews.gif,
+  tamon.jpg: Likenesses of natural persons; not included since their consent
+  was not obtained.
+
+You should edit the tilesets in game.js accordingly; the code is available
+unmodified so as to be a faithful reproduction of the hosted version, and for
+pedagogic purposes. If you are worried about copyright compliance, the best
+course of action is likely to insert your own assets into img/, and use that as
+the only tileset. The CC0 license is available in the file CC0 in the root of
+this repository.
+
+My work is copyright Graham Northup, 2020, licensed as above.

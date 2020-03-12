@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MP* SP20202</title>
+		<meta charset="utf8"/>
+		<script type="text/javascript">
+var game, g;
+
+const init = () => {
+	import("./game.js").then(gm => {
+		console.log(gm);
+		game = gm;
+		g = new game.Game(document.querySelector("#canvas"));
+		document.addEventListener("keydown", g.handle_key.bind(g));
+		document.addEventListener("mousedown", g.handle_click.bind(g));
+		document.addEventListener("mousemove", g.handle_move.bind(g));
+		const score = document.querySelector("#score");
+		g.onscoreupdate = s => score.textContent = s;
+	});
+}
+
+document.addEventListener("DOMContentLoaded", init);
+		</script>
+		<style type="text/css">
+body {
+	background-color: #333;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+#canvas {
+	width: 800px;
+	height: 800px;
+	margin: auto;
+}
+#score_header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+		</style>
+	</head>
+	<body>
+		<h1 id="score_header">Score: <span id="score">0</span></h1>
+		<canvas id="canvas" width=800 height=800></canvas>
+	</body>
+</html>
